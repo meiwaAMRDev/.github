@@ -1,0 +1,47 @@
+name: 検討依頼
+description: 検討
+title: "[検討事項]: "
+labels: ["🤔検討"]
+#projects: ["octo-org/1", "octo-org/44"]
+#assignees:
+#  - octocat
+body:
+  - type: markdown
+    attributes:
+      value: |
+        要望事項を記載します。添付資料などあればURLやファイルを入力前に準備してください🙇‍♂️ 回答は 可能 , 不可能 , 一部条件付きで可能 となります。
+  - type: input
+    id: contact
+    attributes:
+      label: 投稿者 (未記入でも可)
+      description: 記載内容に不明点や確認事項がある場合の問い合わせ先に使用します
+      placeholder: ex. 山田太郎
+    validations:
+      required: false
+  - type: textarea
+    id: request-area
+    attributes:
+      label: どのような要望でしょうか。
+      description: 短く、簡潔に、箇条書きで記載してください。
+      placeholder: -
+        - 何に対して(プラグイン名やソフト名など) = 
+        - どのようなとき = 
+        - どうしたい = 
+        - 添付資料はここに貼り付けてください。
+        - 添付資料の用途
+          - 例:~ P* の ~ を参考にしてください。
+#      value: "A bug happened!"
+    validations:
+      required: true
+  - type: dropdown
+    id: priority
+    attributes:
+      label: priority
+      description: 希望の優先順位を設定してください
+      options:
+        - 🚃早め
+        - 🥱急いでない
+        - 😪気が向いたら
+      default: 1
+    validations:
+      required: true
