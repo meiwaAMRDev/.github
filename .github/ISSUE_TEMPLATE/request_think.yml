@@ -23,7 +23,7 @@ body:
     attributes:
       label: どのような要望でしょうか。
       description: 短く、簡潔に、箇条書きで記載してください。
-      placeholder: -
+      placeholder: |
         - 何に対して(プラグイン名やソフト名など) = 
         - どのようなとき = 
         - どうしたい = 
