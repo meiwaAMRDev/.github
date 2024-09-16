@@ -1,0 +1,24 @@
+name: Core更新時の作業登録
+description: WCS_Core更新に関する更新テンプレ
+title: "[タスク]:WCS_Core更新作業 "
+labels: ["🖊️タスク","✨アップデート"]
+body:
+  - type: input
+    label: アップデートするバージョンを入力してください
+    id: update-area
+    placeholder: 0.1.1
+    required: true
+  - type: input
+    label: 配布されているパッケージのURLを入力してください
+    id: url-area
+    placeholder: http://www...
+    validations:
+      required: true
+  - type: markdown
+    attributes:
+      value:  |
+        - タスク一覧
+          - [ ] WCS_TakaokaPluginsで、DeliKit.Core のnugetパッケージを更新する。 | 
+          - [ ] WCS_TakaokaPluginsのバージョンを更新する。
+          - [ ] WCS_PluginsServiceで、WCS_TakaokaPluginsのdllを使用 + DeliKit.Coreのnugetパッケージを更新する。
+          - [ ] WCSコアとWCS_PluginsServiceを起動して問題ないことを確認する。
