@@ -1,10 +1,7 @@
 name: 検討依頼フォーム
 description: GithubIssueFormを使用した検討依頼フォーム
 title: "[検討依頼]: "
-labels: ["🤔検討"]
-#projects: ["octo-org/1", "octo-org/44"]
-#assignees:
-#  - octocat
+labels: ["🤔検討","📌タスク"]
 body:
   - type: markdown
     attributes:
@@ -25,7 +22,6 @@ body:
       description: 短く、簡潔に、箇条書きで記載してください。
       placeholder: |
         ・記載例：何に対して(プラグイン名やソフト名など) , どのようなとき , どうしたい など記載して下さい。添付資料があればこちらに添付し、用途を記載してください(例:~ P* の ~ を参考にしてください)
-#      value: "A bug happened!"
     validations:
       required: true
   - type: dropdown
