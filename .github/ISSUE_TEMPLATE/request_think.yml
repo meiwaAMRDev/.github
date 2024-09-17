@@ -1,5 +1,5 @@
-name: 検討依頼
-description: 検討依頼
+name: 検討依頼フォーム
+description: GithubIssueFormを使用した検討依頼フォーム
 title: "[検討依頼]: "
 labels: ["🤔検討"]
 #projects: ["octo-org/1", "octo-org/44"]
