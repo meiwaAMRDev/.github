@@ -21,10 +21,6 @@ body:
     attributes:
       value: |
         - タスク一覧
-          - [ ] WCS_TakaokaPluginsで、DeliKit.Core のnugetパッケージを更新する。
-          - [ ] WCS_TakaokaPluginsのバージョンを更新する。
-          - [ ] WCS_PluginsServiceで、WCS_TakaokaPluginsのdllを使用 + DeliKit.Coreのnugetパッケージを更新する。
-          - [ ] WCSコアとWCS_PluginsServiceを起動して問題ないことを確認す
   - type: textarea
     id: remarks
     attributes:
