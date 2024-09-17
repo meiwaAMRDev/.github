@@ -20,9 +20,10 @@ body:
   - type: markdown
     attributes:
       value: |
-        - タスク一覧
+        タスク一覧
   - type: textarea
     id: remarks
     attributes:
       label: その他連絡事項やメモ📝があれば記載ください
+      description: その他連絡事項やメモ📝があれば記載ください
       placeholder: メモ内容があれば記載
