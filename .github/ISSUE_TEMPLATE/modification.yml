@@ -1,0 +1,37 @@
+name: 改造依頼
+description: 改造依頼
+title: "[改造依頼]: "
+labels: ["🛠️改造"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **必要な条件などの情報を記載します。添付資料などあればURLやファイルを入力前に準備してください**🙇‍♂️
+  - type: textarea
+    id: request-area
+    attributes:
+      label: どのような改造でしょうか
+      description: 短く、簡潔に、箇条書きで記載してください。
+      placeholder: |
+        ・記載例：何に対して(プラグイン名やソフト名など) , どのようなとき , どうしたい など記載して下さい。添付資料があればこちらに添付し、用途を記載してください(例:~ P* の ~ を参考にしてください)
+    validations:
+      required: true
+  - type: dropdown
+    id: priority
+    attributes:
+      label: 優先順位
+      description: 希望の優先順位を設定してください
+      options:
+        - 🚗早め(2~3日)
+        - 😴急いでない(4~日)
+      default: 1
+    validations:
+      required: true
+　- type: input
+    id: reason
+    attributes:
+      label: 早めの理由
+      description: 早めの理由を記載してください
+      placeholder: ～のため
+    validations:
+      required: false
