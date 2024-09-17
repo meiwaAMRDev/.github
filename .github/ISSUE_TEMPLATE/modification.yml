@@ -1,7 +1,7 @@
 name: 改造依頼フォーム
 description: GithubIssueFormを使用した改造依頼
 title: "[改造依頼]: "
-labels: ["🛠️改造"]
+labels: ["🛠️改造","📌タスク"]
 body:
   - type: markdown
     attributes:
