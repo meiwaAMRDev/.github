@@ -1,5 +1,5 @@
-name: 改造依頼
-description: 改造依頼
+name: 改造依頼フォーム
+description: GithubIssueFormを使用した改造依頼
 title: "[改造依頼]: "
 labels: ["🛠️改造"]
 body:
@@ -22,16 +22,16 @@ body:
       label: 優先順位
       description: 希望の優先順位を設定してください
       options:
-        - 🚗早め(2~3日)
-        - 😴急いでない(4~日)
+        - 🚗早め
+        - 😴急いでない
       default: 1
     validations:
       required: true
-　- type: input
+  - type: input
     id: reason
     attributes:
-      label: 早めの理由
+      label: 早めの理由(任意)
       description: 早めの理由を記載してください
-      placeholder: ～のため
+      placeholder: ex. ～の理由
     validations:
       required: false
